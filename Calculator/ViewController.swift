@@ -35,6 +35,8 @@ class ViewController: UIViewController {
         if !workings.isEmpty
         {
             previousNumber = Double(workings)!;
+        }else{
+            previousNumber = result;
         }
         
         workings = "";
@@ -93,7 +95,6 @@ class ViewController: UIViewController {
         mathOperator = ""
         workings = "";
         Result.text = "";
-        NSLog("I deleting the whole memory");
     }
 
     
